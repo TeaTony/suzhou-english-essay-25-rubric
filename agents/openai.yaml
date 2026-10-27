@@ -1,0 +1,4 @@
+interface:
+  display_name: "苏州英语作文 25 分制评分"
+  short_description: "苏州中考英语作文评分标准与提示词的单一来源"
+  default_prompt: "使用 $suzhou-english-essay-25-rubric 核对评分标准并完成作文评分。"

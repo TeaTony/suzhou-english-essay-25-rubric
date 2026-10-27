@@ -1,0 +1,44 @@
+{
+  "name": "Suzhou English Essay 25 Rubric",
+  "version": "2026-10-27",
+  "total": 25,
+  "dimensions": {
+    "content": {
+      "max": 10,
+      "rule": "全要点且论证成立7-10；形式齐全但论证链不成立4-5；缺1个要点5-6；缺2个或明显偏题4-5；完全跑题0-2"
+    },
+    "language": {
+      "max": 10,
+      "rule": "语法、词汇和句式综合判断；语法几乎无误且句式有变化为8分门槛"
+    },
+    "structure": {
+      "max": 3,
+      "rule": "分段清晰且过渡自然2；单段或过渡少1；混乱0"
+    },
+    "handwriting": {
+      "max": 2,
+      "rule": "默认1；全篇零涂改且字迹均匀工整才给2；出现涂改记1"
+    }
+  },
+  "tiers": [
+    { "name": "一档（优秀）", "min": 21, "max": 25 },
+    { "name": "二档（良好）", "min": 16, "max": 20 },
+    { "name": "三档（合格）", "min": 11, "max": 15 },
+    { "name": "四档（较差）", "min": 6, "max": 10 },
+    { "name": "五档（极差）", "min": 0, "max": 5 }
+  ],
+  "contentLogic": {
+    "chain": ["claim", "reason", "aligned_example", "self_connection"],
+    "topic_keyword_matching_forbidden": true,
+    "logic_failure": {
+      "content_range": [4, 5],
+      "tier": "四档（较差）"
+    },
+    "invalid_patterns": [
+      "只写个人偏好或情绪结果",
+      "罗列现象或重复标题",
+      "事例实际证明的是另一个对象",
+      "标题和正文讨论不同主张"
+    ]
+  }
+}
